@@ -1,6 +1,7 @@
 FbTrending::Application.routes.draw do
   
-  resources :fb_pages
+  resources :fb_pages, only: [ :index, :new, :create ]
+  root "fb_pages#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
