@@ -17,6 +17,9 @@ describe FbPagesController do
     it "returns http success" do
       get 'new'
       response.should be_success
+      response.should render_template :new
+      assigns(:fb_page).should_not be_nil
+      assigns(:fb_page).should be_a_kind_of(FbPage)
     end
   end
 
