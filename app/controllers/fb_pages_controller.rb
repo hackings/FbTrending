@@ -4,6 +4,7 @@ class FbPagesController < ApplicationController
   end
 
   def new
+    @fb_page = FbPage.new
   end
 
   def create
