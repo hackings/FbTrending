@@ -5,6 +5,8 @@ gem 'rails', '4.0.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem "therubyracer"
+gem "less-rails"
 gem "twitter-bootstrap-rails"
 
 # Use SCSS for stylesheets
