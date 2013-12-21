@@ -1,26 +1,24 @@
 <h5>Listing Facebook Trands</h5>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>Business name</th>
-      <th>Facebook url</th>
-      <th>Description</th>
       <th>Name</th>
+      <th>Business name</th>
       <th>Email</th>
       <th>Facebook likes</th>
+      <th>Description</th>
     </tr>
   </thead>
 
   <tbody>
     <% @fb_pages.each do |fb_page| %>
       <tr>
+        <td><%= link_to fb_page.name, fb_page.facebook_url %></td>
         <td><%= fb_page.business_name %></td>
-        <td><%= fb_page.facebook_url %></td>
-        <td><%= fb_page.description %></td>
-        <td><%= fb_page.name %></td>
         <td><%= fb_page.email %></td>
         <td><%= fb_page.facebook_likes %></td>
+        <td><%= fb_page.description %></td>
       </tr>
     <% end %>
   </tbody>
