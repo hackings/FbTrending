@@ -32,7 +32,7 @@ describe FbPagesController do
     it "create with invalid attributes" do
       post 'create', fb_page: { business_name: 'invalid record' }
       response.should be_success
-      response.should render_template :new·  
+      response.should render_template :new
     end
   end
 
