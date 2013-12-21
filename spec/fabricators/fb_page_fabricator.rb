@@ -3,6 +3,6 @@ Fabricator(:fb_page) do
   facebook_url   "MyString"
   description    "MyText"
   name           "MyString"
-  email          "MyString"
+  email          "test@example.com"
   facebook_likes 1
 end
