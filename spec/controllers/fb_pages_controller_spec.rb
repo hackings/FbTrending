@@ -24,9 +24,10 @@ describe FbPagesController do
   end
 
   describe "POST 'create'" do
-    it "returns http success" do
-      post 'create'
+    it "create with valid attributes" do
+      post 'create', fb_page: Fabricate.attributes_for(:fb_page)
       response.should be_success
+      response.should redirect_to fb_pages_path
     end
   end
 
