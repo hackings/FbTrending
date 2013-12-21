@@ -1,4 +1,7 @@
 FbTrending::Application.routes.draw do
+  get "fb_pages/index"
+  get "fb_pages/new"
+  get "fb_pages/create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
