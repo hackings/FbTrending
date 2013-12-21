@@ -1,6 +1,6 @@
 class FbPagesController < ApplicationController
   def index
-    @pages = FbPage.all
+    @fb_pages = FbPage.all
   end
 
   def new
