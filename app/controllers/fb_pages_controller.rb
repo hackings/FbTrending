@@ -1,6 +1,6 @@
 class FbPagesController < ApplicationController
   def index
-    @fb_pages = FbPage.all
+    @fb_pages = FbPage.top_30_trands
   end
 
   def new
