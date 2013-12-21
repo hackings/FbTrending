@@ -1,2 +1,29 @@
-<h1>FbPages#index</h1>
-<p>Find me in app/views/fb_pages/index.html.erb</p>
+<h5>Listing Facebook Trands</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Business name</th>
+      <th>Facebook url</th>
+      <th>Description</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Facebook likes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fb_pages.each do |fb_page| %>
+      <tr>
+        <td><%= fb_page.business_name %></td>
+        <td><%= fb_page.facebook_url %></td>
+        <td><%= fb_page.description %></td>
+        <td><%= fb_page.name %></td>
+        <td><%= fb_page.email %></td>
+        <td><%= fb_page.facebook_likes %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
